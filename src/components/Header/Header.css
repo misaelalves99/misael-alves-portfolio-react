@@ -1,0 +1,132 @@
+.header {
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    margin: 0;
+    padding: 0;
+}
+
+.container-header {
+    max-width: 1280px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .container-header {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-header {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-header {
+        max-width: 576px;
+    }
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.navbar ul {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar ul li{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: white;
+}
+
+.navbar ul li:hover {
+    color: rgb(246, 5, 97);
+}
+
+a {
+    color: white;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.menu-list li {
+    margin-left: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+}
+
+.menu-list.open {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .navbar ul{
+        display: none;
+    }
+
+    .menu-list {
+        min-width: 150px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .menu-list.open {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 10;
+    }
+
+    .menu-list li {
+        margin: 10px 0;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}

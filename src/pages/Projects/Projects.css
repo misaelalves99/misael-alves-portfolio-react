@@ -1,0 +1,253 @@
+/* PROJETOS */
+
+.section-projects {
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.container-hero-projects {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .container-hero-projects {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-hero-projects {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-hero-projects {
+        max-width: 576px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .projects h1 {
+        text-align: center;
+    }
+    .projects h2 {
+        text-align: center;
+    }
+}
+
+.projects {
+    max-width: 400px;
+    width: 100%;
+}
+
+.projects h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.projects h2 {
+    color: rgb(255, 0, 72);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+.projects-img {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Projetos */
+
+.section-item-projects {
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%); 
+}
+
+.container-projects {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+@media (max-width: 1280px) {
+    .container-projects {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-projects {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-projects {
+        max-width: 576px;
+    }
+}
+
+.projects-items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+    margin: auto;
+}
+
+@media (max-width: 1280px) {
+    .projects-items {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        margin: auto;
+    }
+}
+
+.item-projects {
+    max-width: 350px;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+    box-shadow: 0px 0px 8px 3px rgb(0, 0, 0);
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-projects:hover {
+    box-shadow: 0px 0px 8px 3px rgb(255, 0, 72);
+    transition-duration: .5s !important;
+}
+
+.container-item {
+    padding: 10px;
+    margin: auto;
+}
+
+.img-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(33, 33, 33);
+}
+
+.info-tools {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-tools h2 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.info-tools p {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.list-tools {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icons-tool {
+    margin: 5px;
+}
+
+.icon-tool {
+    color: white;
+    margin: auto;
+    font-size: 40px;
+}
+
+.btns-lives {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btns-lives button {
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgb(255, 0, 72);
+    border-color: rgb(255, 0, 72);
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btns-lives button:hover {
+    background-color: transparent;
+    border-color: rgb(255, 0, 72);
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+}

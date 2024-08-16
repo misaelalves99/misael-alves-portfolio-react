@@ -1,0 +1,68 @@
+.container-hero-experience {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .container-hero-experience {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-hero-experience {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-hero-experience {
+        max-width: 576px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .experience h1 {
+        text-align: center;
+    }
+    .experience h2 {
+        text-align: center;
+    }
+}
+
+.experience {
+    max-width: 400px;
+    width: 100%;
+}
+
+.experience h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.experience h2 {
+    color: rgb(255, 0, 72);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.experience-img {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,325 @@
+.section-about-me {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container-hero-about {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .container-hero-about {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-hero-about {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-hero-about {
+        max-width: 576px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .about-me {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+.about-me {
+    max-width: 400px;
+}
+
+.about-me h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.about-me h2 {
+    color: rgb(243, 0, 69);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.about-me-profile {
+    max-width: 400px;
+    border-radius: 100%;
+    background-color: rgb(40, 40, 40);
+    border-width: 3px;
+    border-color: rgb(243, 0, 69);
+    overflow: hidden;
+}
+
+.about-me-profile:hover {
+    background-color: rgb(243, 0, 69);
+}
+
+/* EDUCAÇÃO */
+
+/* Formação Acadêmica */
+
+.education {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+}
+
+.container-education {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 50px;
+}
+
+@media (max-width: 1280px) {
+    .container-education {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-education {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-education {
+        max-width: 576px;
+    }
+}
+
+.education-title {
+    margin: auto;
+    text-align: center;
+}
+
+.education-title h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.education-title h2 {
+    color: rgb(243, 0, 69);
+    font-family: "Ubuntu", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.formation-items {
+    max-width: 1280px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+@media (max-width: 1280px) {
+    .formation-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .formation-items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .formation-items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.item-formation {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+    box-shadow: 0px 0px 8px 3px rgb(0, 0, 0);
+}
+
+.item-formation:after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item-formation:hover {
+    transform:scale(1.100,1.100);
+    box-shadow: 0px 0px 8px 3px rgb(243, 0, 69);
+    border-radius: 10px;
+}
+
+.container-item-for {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition-duration: .5s !important;
+}
+
+.img-item-for {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.info-item-for {
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.data-item h3 {
+    height: 5%;
+    font-size: 1.2rem;
+    padding: 3%;
+    color: rgb(243, 0, 69);
+    text-align: left;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.data-item p {
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* Certificações */
+
+.certifications {
+    max-width: 768px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.certifications-title h2 {
+    color: rgb(243, 0, 69);
+    font-family: "Ubuntu", sans-serif; 
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.certifications-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 1280px) {
+    .certifications-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .certifications-items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.item-certifications {
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+    box-shadow: 0px 0px 8px 3px rgb(108, 108, 108);
+    transition-duration: .5s !important;
+}
+
+.item-certifications:after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item-certifications:hover {
+    transform:scale(1.100,1.100);
+    box-shadow: 0px 0px 8px 3px rgb(243, 0, 69);
+}
+
+.container-item-cert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-certifications {
+    padding-bottom: 30px;
+}
+
+.img-certifications img {
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+.description-certifications {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.description-certifications p {
+    color: white;
+}
+

@@ -1,0 +1,219 @@
+.section-contact {
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.container-hero-contact {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .container-hero-contact {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-hero-contact {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-hero-contact {
+        max-width: 576px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact h1 {
+        text-align: center;
+    }
+    .contact h2 {
+        text-align: center;
+    }
+}
+
+.contact {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.contact h2 {
+    color: rgb(255, 0, 72);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.contact-img {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contact-form {
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%); 
+}
+
+.container-contact-form {
+    max-width: 1280px;
+    width: 100%;
+    padding: 50px;
+    margin: auto;
+}
+
+@media (max-width: 1280px) {
+    .container-contact-form {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-contact-form {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-contact-form {
+        max-width: 576px;
+    }
+}
+
+.form {
+    max-width: 500px;
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+}
+
+.form:hover {
+    box-shadow: 0px 0px 8px 3px rgb(255, 0, 72);
+    transition-duration: .5s !important;
+}
+
+.form-contact {
+    max-width: 300px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-name {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form-name label {
+    margin-bottom: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(223, 223, 223);
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.form-name input {
+    padding: 10px;
+    border-width: 2px;
+    border-color: rgb(255, 0, 72);
+    background-color: black;
+    font-size: 1.3rem;
+}
+
+.form-email {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form-email label {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(223, 223, 223);
+    text-align: left;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.form-email input {
+    padding: 10px;
+    border-width: 2px;
+    border-color: rgb(255, 0, 72);
+    background-color: black;
+    font-size: 1.3rem;
+}
+
+.form-msg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form-msg label {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(223, 223, 223);
+    text-align: left;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.form-msg textarea {
+    color: white;
+    padding: 10px;
+    border-width: 2px;
+    border-color: rgb(255, 0, 72);
+    background-color: black;
+    font-size: 1.3rem;
+}
