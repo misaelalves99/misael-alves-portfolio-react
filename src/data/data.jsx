@@ -21,6 +21,7 @@ import { FiGithub } from "react-icons/fi";
 import ImgProjCard1 from '../assets/img-projeto-card-01.png';
 import ImgProjCard2 from '../assets/img-projeto-card-02.png';
 import ImgProjCard3 from '../assets/img-projeto-card-03.png';
+import ImgProjCard4 from '../assets/img-projeto-card-04.png';
 
 export const cardFormation = [         
     {
@@ -117,5 +118,20 @@ export const cardProjects = [
         iconbtn2: <FiGithub/>,
         demo: "https://e-commerce-shop-indol.vercel.app/",
         github: "https://github.com/misaelalves99/e-commerce-shop"
+    },
+    {
+        id: 4,
+        img: ImgProjCard4,
+        title: "E-COMMERCE SHOP",
+        desc: "Nesse projeto pessoal de loja virtual possui variadas categorias de produtos para filtrar e efetuar a compra.",
+        icon1: <FaReact className='icon-tool' />,
+        icon2: <FaHtml5 className='icon-tool' />,
+        icon3: <FaCss3Alt className='icon-tool' />,
+        icon4: <SiMui className='icon-tool' />,
+        icon5: <SiReactrouter className='icon-tool'/>,
+        iconbtn1: <RiComputerLine/>,
+        iconbtn2: <FiGithub/>,
+        demo: "https://ms-pet.vercel.app/",
+        github: "https://github.com/misaelalves99/ms_pet"
     },
 ]
