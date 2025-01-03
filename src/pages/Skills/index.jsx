@@ -2,8 +2,8 @@ import '../Skills/Skills.css';
 import ImgHab from '../../assets/img-habilidades.png';
 import { FaHtml5, FaCss3Alt, FaReact, FaNpm, FaFigma } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { RiTailwindCssLine, RiNextjsLine } from "react-icons/ri";
-import { SiMui, SiReactrouter } from "react-icons/si";
+import { RiTailwindCssLine } from "react-icons/ri";
+import { SiReactrouter } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { DiIllustrator } from "react-icons/di";
 import Header from "../../components/Header";
@@ -22,7 +22,7 @@ export default function Skills() {
                         <Fade bottom duration={2000} distance="40px">
                             <div className="skills">
                                 <h1>Habilidades</h1>
-                                <h2>Essas são as minhas habilidades como desenvolvedor web front-end.</h2>
+                                <h2>Essas são as minhas habilidades como desenvolvedor front-end.</h2>
                             </div>
                             <div className='skills-img'>
                                 <img src={ImgHab} alt={ImgHab} />
@@ -60,9 +60,6 @@ export default function Skills() {
                                     </div>
                                     <div className='item-libraries'>
                                         <RiTailwindCssLine className='icon-libraries' />
-                                    </div>
-                                    <div className='item-libraries'>
-                                        <SiMui className='icon-libraries' />
                                     </div>
                                     <div className='item-libraries'>
                                         <FaNpm className='icon-libraries' />
