@@ -90,236 +90,140 @@
     background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
 }
 
+/* Container Principal */
 .container-education {
     max-width: 1280px;
-    width: 100%;
-    margin: auto;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-top: 50px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    color: #f1f1f1;
 }
 
-@media (max-width: 1280px) {
-    .container-education {
-        max-width: 1024px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .container-education {
-        max-width: 768px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container-education {
-        max-width: 576px;
-    }
-}
-
+/* Títulos da Educação */
 .education-title {
-    margin: auto;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .education-title h1 {
-    color: white;
-    font-family: "Ubuntu", sans-serif;
+    font-size: 2.8rem;
     font-weight: 700;
-    font-style: normal;
-    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
 }
 
 .education-title h2 {
-    color: rgb(243, 0, 69);
-    font-family: "Ubuntu", sans-serif; 
-    font-weight: 400;
-    font-style: normal;
     font-size: 2rem;
+    font-weight: 400;
+    color: rgb(243, 0, 69);
 }
 
+/* Itens de Formação */
 .formation-items {
-    max-width: 1280px;
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: auto;
-}
-
-@media (max-width: 1280px) {
-    .formation-items {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 1024px) {
-    .formation-items {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .formation-items {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .item-formation {
-    max-width: 500px;
-    margin: auto;
+    background: linear-gradient(145deg, #1f1f1f, #292929);
     border-radius: 15px;
-    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
-    box-shadow: 0px 0px 8px 3px rgb(0, 0, 0);
-}
-
-.item-formation:after {
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item-formation:hover {
-    transform:scale(1.100,1.100);
-    box-shadow: 0px 0px 8px 3px rgb(243, 0, 69);
-    border-radius: 10px;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(243, 0, 69, 0.5);
 }
 
 .container-item-for {
-    max-width: 500px;
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-    transition-duration: .5s !important;
+    gap: 20px;
 }
 
-.img-item-for {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
+.img-item-for img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgb(243, 0, 69);
 }
 
-.info-item-for {
-    border-radius: 0px 15px 15px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.data-item{
-    display: flex;
-    flex-direction: column;
-}
-
-.data-item h3 {
-    height: 5%;
-    font-size: 1.2rem;
-    padding: 3%;
+.info-item-for h3 {
+    font-size: 1.4rem;
     color: rgb(243, 0, 69);
-    text-align: left;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    margin-bottom: 5px;
 }
 
-.data-item p {
-    color: white;
-    padding: 15px;
-    text-align: left;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.info-item-for p {
     font-size: 1rem;
+    color: #ddd;
+    line-height: 1.5;
 }
 
 /* Certificações */
-
 .certifications {
-    max-width: 768px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: auto;
+    margin-top: 60px;
+    text-align: center;
 }
 
 .certifications-title h2 {
-    color: rgb(243, 0, 69);
-    font-family: "Ubuntu", sans-serif; 
-    text-align: center;
-    font-weight: 400;
-    font-style: normal;
     font-size: 2rem;
+    font-weight: 400;
+    color: rgb(243, 0, 69);
 }
 
 .certifications-items {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-@media (max-width: 1280px) {
-    .certifications-items {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 1024px) {
-    .certifications-items {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .certifications-items {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .item-certifications {
-    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
-    box-shadow: 0px 0px 8px 3px rgb(108, 108, 108);
-    transition-duration: .5s !important;
-}
-
-.item-certifications:after {
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: linear-gradient(145deg, #1f1f1f, #292929);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item-certifications:hover {
-    transform:scale(1.100,1.100);
-    box-shadow: 0px 0px 8px 3px rgb(243, 0, 69);
-}
-
-.container-item-cert {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(243, 0, 69, 0.5);
 }
 
 .img-certifications {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
     padding-bottom: 30px;
 }
 
 .img-certifications img {
-    margin: auto;
-    position: relative;
-    top: 30px;
-}
-
-.description-certifications {
-    text-align: center;
-    padding: 20px;
     max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto; /* Garante alinhamento centralizado */
 }
 
 .description-certifications p {
-    color: white;
+    font-size: 1rem;
+    color: #ddd;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .education-title h1 {
+        font-size: 2.4rem;
+    }
+
+    .education-title h2 {
+        font-size: 1.8rem;
+    }
+}
+
 

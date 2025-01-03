@@ -30,62 +30,57 @@ export default function About() {
                     {/* EDUCAÇÃO */}
                     <div className='education'>
                         <Fade bottom duration={2000} distance="40px">
-                            <div className='container-education'>
-                                <div className='education-title'>
-                                    <h1>Educacão</h1>
-                                    <br/>
-                                    <h2>Formação Acadêmica</h2>
-                                    <br/>
+                        <div className='container-education'>
+                            <div className='education-title'>
+                                <h1>Educação</h1>
+                                <h2>Formação Acadêmica</h2>
+                            </div>
+
+                            {/* Formação Acadêmica */}
+                            <div className='formation-items'>
+                                {cardFormation.map((data) => (
+                                    <div className='item-formation' key={data.id}>
+                                        <div className='container-item-for'>
+                                            <div className='img-item-for'>
+                                                <img src={data.img} alt="Imagem Card" />
+                                            </div>
+                                            <div className='info-item-for'>
+                                                <h3>{data.title}</h3>
+                                                <p>{data.curso}</p>
+                                                <p>{data.instituicao}</p>
+                                                <p>{data.periodo}</p>
+                                                <p>{data.nota}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Certificações */}
+                            <div className='certifications'>
+                                <div className='certifications-title'>
+                                    <h2>Certificações</h2>
                                 </div>
-                                {/* Formação Acadêmica */}
-                                <div className='formation-items'>
-                                    {cardFormation.map((data) => (
-                                        <div className='item-formation' key={data.id}>
-                                            <div className='container-item-for'>
-                                                <div className='img-item-for'>
-                                                    <img src={data.img} alt="Imagem Card" />
-                                                </div>
-                                                <div className='info-item-for'>
-                                                    <div className='data-item'>
-                                                        <h3>{data.title}</h3>
-                                                        <p>{data.curso}</p>
-                                                        <p>{data.instituicao}</p>
-                                                        <p>{data.periodo}</p>
-                                                        <p>{data.nota}</p>
+
+                                <div className='certifications-items'>
+                                    {cardCertification.map((data) => (
+                                        <Link to={data.cert} target='_blank' key={data.id}>
+                                            <div className='item-certifications'>
+                                                <div className='container-item-cert'>
+                                                    <div className='img-certifications'>
+                                                        <img src={data.imgcert} alt="Certificado" />
+                                                    </div>
+                                                    <div className='description-certifications'>
+                                                        <p>{data.desc}</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                     ))}
                                 </div>
-
-                                {/* Certificações */}
-
-                                <div className='certifications'>
-                                    <div className='certifications-title'>
-                                        <h2>Certificações</h2>
-                                    </div>
-
-                                    <br/>
-
-                                    <div className='certifications-items'>
-                                        {cardCertification.map((data) => (
-                                            <Link to={data.cert} target='_blank'>
-                                                <div className='item-certifications' key={data.id}>
-                                                    <div className='container-item-cert'>
-                                                        <div className='img-certifications'>
-                                                            <img  src={data.imgcert} alt="Certificado"/>
-                                                        </div>
-                                                        <div className='description-certifications'>
-                                                            <p>{data.desc}</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+
                             
                         </Fade>
                     </div>
