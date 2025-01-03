@@ -21,7 +21,7 @@ export default function Home() {
                         <div className='presentation'>
                             <h1><strong>Olá, sou Misael Alves</strong></h1>
                             <br/>
-                            <h2 className='desc'>Desenvolvedor web front-end júnior à procura de estágio ou emprego.</h2>
+                            <h2 className='desc'>Desenvolvedor front-end buscando oportunidade de estágio.</h2>
                             <h2 className='typical'>{''}
                                 <Typical 
                                     loop={Infinity} 
@@ -32,8 +32,6 @@ export default function Home() {
                                         3000,
                                         'Tailwind CSS',
                                         3000,
-                                        'MUI Material',
-                                        3000,
                                         'React Router',
                                         3000,
                                     ]}
@@ -41,8 +39,12 @@ export default function Home() {
                             </h2>
                             <br/>
                             <Link to={Curriculo} target='_blank'>
-                                <button><GrDocumentText className='icon-doc' />Download CV</button>
+                                <button className="styled-button">
+                                    <GrDocumentText className='icon-doc' />
+                                    Download CV
+                                </button>
                             </Link>
+
                         </div>
                     </Fade>
                     

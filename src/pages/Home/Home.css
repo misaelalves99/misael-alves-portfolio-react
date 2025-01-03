@@ -115,9 +115,45 @@
    
 }
 
+/* Botão estilizado */
+.styled-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Gradiente profissional */
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.styled-button:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c); /* Inverte o gradiente no hover */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Realça a sombra */
+}
+
+.styled-button:active {
+    transform: translateY(0); /* Remove a elevação ao clicar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra reduzida */
+}
+
+/* Ícone dentro do botão */
 .icon-doc {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.styled-button:hover .icon-doc {
+    transform: rotate(-15deg); /* Efeito sutil no ícone ao passar o mouse */
 }
 
 .contact-social {
@@ -141,50 +177,49 @@
     background-color: rgb(255, 0, 72);
 }
 
+/* Redes Sociais */
 .social-media {
-    color: white;
-    font-size: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 20px;
 }
 
 .social-media div {
-    margin: 2px;
-    padding: 10px;
-    border-radius: 28px;
-    color: white;
-    background-color: rgb(26, 26, 26);
-    font-size: 1.7rem;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-color: rgb(163, 163, 163);
-    border-style: solid;
-    border-width: 3px;
-    transition-duration: .5s !important;
+    border-radius: 50%;
+    background-color: rgb(26, 26, 26);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.7rem;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .social-media div:hover {
-    box-shadow: 0px 0px 8px 3px rgb(255, 0, 72);
-    border-color: rgb(163, 163, 163);
-    border-style: solid;
-    border-width: 3px;
+    transform: scale(1.2);
+    background: linear-gradient(135deg, rgb(255, 0, 72), rgb(255, 102, 102));
+    box-shadow: 0 6px 15px rgba(255, 0, 72, 0.6);
+    border-color: rgb(255, 0, 72);
 }
 
 .social-media a {
-    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
 }
 
-.social-media a:after {
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+/* Ícones */
+.icon-sm {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.social-media a:hover {
-    transform:scale(1.100,1.100);
-}
-
-.social-media .icon-sm:hover {
-    color: rgb(243, 0, 69);
+.icon-sm:hover {
+    color: white; /* Contraste para o gradiente do fundo */
+    transform: rotate(-10deg); /* Efeito sutil de rotação */
 }
