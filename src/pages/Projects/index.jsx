@@ -18,7 +18,7 @@ export default function Projects() {
                         <Fade bottom duration={2000} distance="40px">
                             <div className="projects">
                                 <h1>Projetos</h1>
-                                <h2>Confira alguns dos projetos pessoais em que trabalhei, aplicando minhas habilidades em desenvolvimento web front-end com React.js. Cada projeto reflete meu comprometimento com a criação de soluções funcionais e inovadoras.</h2>
+                                <h2>Confira os projetos pessoais em que trabalhei, aplicando minhas habilidades em desenvolvimento front-end com React.js. Cada projeto reflete meu comprometimento com a criação de soluções funcionais e inovadoras.</h2>
                             </div>
                             
                             <div className='projects-img'>
