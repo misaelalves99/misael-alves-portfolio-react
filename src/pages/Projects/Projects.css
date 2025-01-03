@@ -1,3 +1,13 @@
+/* Geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    line-height: 1.6;
+}
+
 /* PROJETOS */
 
 .section-projects {
@@ -144,6 +154,159 @@
     }
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que os elementos sejam espaçados verticalmente */
+    height: 100%; /* Garante que o card ocupe toda a altura */
+    background: linear-gradient(45deg, #1a1a1a, #333);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 0, 72, 0.4);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff0048;
+}
+
+.project-info {
+    margin-bottom: auto; /* Garante que o conteúdo fique acima dos botões */
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: flex-start; /* Garante que os itens fiquem alinhados ao topo */
+}
+
+.project-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ff0048;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #cfcfcf;
+    margin-bottom: 1.5rem;
+}
+
+
+.project-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.tool-icon {
+    font-size: 1.5rem;
+    background-color: #222;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tool-icon:hover {
+    background-color: #ff0048;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .project-tools {
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+}
+
+.tool-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    background: #333;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin-top: auto; /* Garante que os botões fiquem no final do card */
+    background: #202020;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Adiciona uma borda sutil */
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-demo {
+    background: #ff0048;
+    border-color: #ff0048;
+}
+
+.btn-demo:hover {
+    background: transparent;
+    color: #ff0048;
+}
+
+.btn-github {
+    background: #444;
+    border-color: #444;
+}
+
+.btn-github:hover {
+    background: transparent;
+    color: #444;
+}
+
 .item-projects {
     max-width: 350px;
     width: 100%;
@@ -224,30 +387,28 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: auto; /* Garante que os botões fiquem na parte inferior do card */
+    padding-top: 10px;
+    gap: 10px; /* Adiciona espaçamento entre os botões */
 }
 
 .btns-lives button {
-    margin: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 10px 20px;
     background-color: rgb(255, 0, 72);
-    border-color: rgb(255, 0, 72);
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid rgb(255, 0, 72);
     color: white;
     border-radius: 28px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btns-lives button:hover {
     background-color: transparent;
-    border-color: rgb(255, 0, 72);
-    border-style: solid;
-    border-width: 2px;
-    color: white;
+    color: rgb(255, 0, 72);
 }
+
