@@ -15,7 +15,7 @@ export default function Experience() {
                     <Fade bottom duration={2000} distance="40px">
                         <div className="experience">
                             <h1>Experiência</h1>
-                            <h2>Procuro novas oportunidades para demonstrar meu valor e desempenho. Estou à disposição para vagas de emprego ou estágio em Desenvolvimento Web Front-End em React.js.</h2>
+                            <h2>Procuro por oportunidades para demonstrar o meu valor e desempenho. Estou à disposição para vagas de estágio em Desenvolvimento Front-End em React.js.</h2>
                         </div>
                         <div className='experience-img'>
                             <img src={ImgExp} alt={ImgExp} />
