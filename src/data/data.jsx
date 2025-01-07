@@ -14,7 +14,7 @@ import { FaReact } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssLine } from "react-icons/ri";
-import { SiMui, SiReactrouter } from "react-icons/si";
+import { SiReactrouter } from "react-icons/si";
 import { RiComputerLine } from "react-icons/ri";
 import { FiGithub } from "react-icons/fi";
 
@@ -23,6 +23,7 @@ import ImgProjCard2 from '../assets/img-projeto-card-02.png';
 import ImgProjCard3 from '../assets/img-projeto-card-03.png';
 import ImgProjCard4 from '../assets/img-projeto-card-04.png';
 import ImgProjCard5 from '../assets/img-projeto-card-05.png';
+import ImgProjCard6 from '../assets/img-projeto-card-06.png';
 
 export const cardFormation = [         
     {
@@ -113,7 +114,6 @@ export const cardProjects = [
         icon1: <FaReact className='icon-tool' />,
         icon2: <FaHtml5 className='icon-tool' />,
         icon3: <FaCss3Alt className='icon-tool' />,
-        icon4: <SiMui className='icon-tool' />,
         icon5: <SiReactrouter className='icon-tool'/>,
         iconbtn1: <RiComputerLine/>,
         iconbtn2: <FiGithub/>,
@@ -147,5 +147,19 @@ export const cardProjects = [
         iconbtn2: <FiGithub/>,
         demo: "https://ms-food.vercel.app/",
         github: "https://github.com/misaelalves99/ms_food"
+    },
+    {
+        id: 6,
+        img: ImgProjCard6,
+        title: "MS NUTRI",
+        desc: "Um projeto de informações de alimentos nutritivos para a saúde geral.",
+        icon1: <FaReact className='icon-tool' />,
+        icon2: <FaHtml5 className='icon-tool' />,
+        icon3: <FaCss3Alt className='icon-tool' />,
+        icon5: <SiReactrouter className='icon-tool'/>,
+        iconbtn1: <RiComputerLine/>,
+        iconbtn2: <FiGithub/>,
+        demo: "https://ms-nutri.vercel.app/",
+        github: "https://github.com/misaelalves99/ms-nutri"
     }
 ]

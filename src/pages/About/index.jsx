@@ -19,7 +19,7 @@ export default function About() {
                             <div className="about-me">
                                 <h1>Sobre mim</h1>
                                 <br/>
-                                <h2>Olá, meu nome é Misael Alves, moro em Teófilo Otoni-MG. Sou desenvolvedor web front-end em React.js e, há pouco tempo, me formei no curso de Análise e Desenvolvimento de Sistemas.</h2>
+                                <h2>Olá, meu nome é Misael Alves, moro em Teófilo Otoni-MG. Sou desenvolvedor front-end em React.js e sou formado no curso de Análise e Desenvolvimento de Sistemas.</h2>
                             </div>
                             <div className='about-me-profile'>
                                 <img src={Perfil} alt={Perfil} />
