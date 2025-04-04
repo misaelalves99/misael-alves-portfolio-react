@@ -6,6 +6,8 @@ import { RiTailwindCssLine } from "react-icons/ri";
 import { SiReactrouter } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { DiIllustrator } from "react-icons/di";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiNextdotjs } from "react-icons/si";
 import Header from "../../components/Header";
 import MainContainer from "../../components/MainContainer";
 import Footer from "../../components/Footer";
@@ -46,6 +48,9 @@ export default function Skills() {
                                     <div className='item-languages'>
                                         <IoLogoJavascript className='icon-languages' />
                                     </div>
+                                    <div className='item-languages'>
+                                        <BiLogoTypescript className='icon-languages' />
+                                    </div>
                                 </div>
                             </Fade>
                         </div>
@@ -57,6 +62,9 @@ export default function Skills() {
                                 <div className='libraries-items'>
                                     <div className='item-libraries'>
                                         <FaReact className='icon-libraries' />
+                                    </div>
+                                    <div className='item-libraries'>
+                                        <SiNextdotjs className='icon-libraries' />
                                     </div>
                                     <div className='item-libraries'>
                                         <RiTailwindCssLine className='icon-libraries' />
