@@ -1,0 +1,159 @@
+.containerHero {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .containerHero {
+        max-width: 1140px;
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .containerHero {
+        max-width: 768px;
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerHero {
+        max-width: 576px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        padding: 30px 20px;
+    }
+
+    .presentation {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+.presentation {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.desc {
+    color: rgb(243, 0, 69);
+    font-size: 1.8rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.typical {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.styledButton {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(255, 0, 72);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.styledButton:hover {
+    box-shadow: 0px 0px 8px 3px rgb(255, 0, 72);
+    transform: scale(1.1);
+    border: 3px solid rgb(163, 163, 163);
+}
+
+.iconDoc {
+    font-size: 1.3rem;
+    transition: transform 0.3s;
+}
+
+.styledButton:hover .iconDoc {
+    transform: rotate(-15deg);
+}
+
+.contactSocial {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeProfile {
+    border-radius: 50%;
+    background-color: rgb(40, 40, 40);
+    border: 4px solid rgb(255, 0, 72); /* borda mais grossa */
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 350px;  /* maior */
+    height: 350px; /* maior */
+    box-shadow: 0 0 20px rgb(255, 0, 72, 0.6);
+}
+
+.homeProfile:hover {
+    background-color: rgb(255, 0, 72);
+    transform: scale(1.05);
+}
+
+.homeProfile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+  padding-top: 25px;
+  justify-content: center; /* centraliza os ícones */
+}
+
+.socialMedia a {
+  width: 60px;
+  height: 60px;
+  background-color: #1f2937; /* cinza escuro tipo bg-gray-800 */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.socialMedia a:hover,
+.socialMedia a:focus {
+  background: linear-gradient(135deg, #ff0048, #ff6680);
+  color: white;
+  box-shadow: 0 6px 15px rgba(255, 0, 72, 0.7);
+  transform: scale(1.15);
+  border-color: #ff0048;
+  outline: none;
+}

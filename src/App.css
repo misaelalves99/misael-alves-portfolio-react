@@ -1,1 +1,18 @@
+/* src/App.css */
 
+main {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/assets/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
