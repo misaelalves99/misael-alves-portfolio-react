@@ -1,4 +1,4 @@
-// app/types/project-data-all.ts
+// src/types/project-data-all.ts
 
 import { IconType } from "react-icons";
 

@@ -1,12 +1,10 @@
-// types/project.ts
-
-import { StaticImageData } from "next/image";
+// src/types/project.ts
 
 export type Project = {
   id: number;
   title: string;
   desc: string;
-  img: string | StaticImageData;
+  img: string;
   demo: string;
   github: string;
   icon1?: React.ReactNode;
